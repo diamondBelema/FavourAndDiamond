@@ -5,30 +5,8 @@
 </head>
 <body style="font-family:sans-serif;font-size:16px;">
 
-<p id="s1">1. Page loaded over HTTPS: YES (if you can read this, it worked)</p>
-<p id="s2">2. JavaScript running: checking...</p>
-<p id="s3">3. Network request (XHR): checking...</p>
-
-<script>
-  document.getElementById("s2").innerText = "2. JavaScript running: YES";
-
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        document.getElementById("s3").innerText = "3. Network request (XHR): SUCCESS";
-      } else {
-        document.getElementById("s3").innerText = "3. Network request (XHR): FAILED - status " + xhr.status;
-      }
-    }
-  };
-  try {
-    xhr.send();
-  } catch (e) {
-    document.getElementById("s3").innerText = "3. Network request (XHR): ERROR - " + e.message;
-  }
-</script>
+<p id="s1">Message 1: Favour, it's Diamond, I really don't know why sms is not working, i presume it is a network problem but anyway.
+           I am replying to the message i just say "page loaded... Please tell me whatever you say, i will write the reply here okay</p>
 
 </body>
 </html>
